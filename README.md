@@ -10,17 +10,17 @@ building a management panel with CRUD operations.
 
 Backend:
 
-1. Project Setup and Version Control.
-2. API Design and Implementation.
-3. Secure Password Hashing and Storage.
-4. Validation, Error Handling, and Documentation.
-5. Custom User Model and Authentication.
-6. Message Queue with Celery.
-7. Database and Deployment.
+- Project Setup and Version Control.
+- API Design and Implementation.
+- Secure Password Hashing and Storage.
+- Validation, Error Handling, and Documentation.
+- Custom User Model and Authentication.
+- Message Queue with Celery.
+- Database and Deployment.
 
 ### Project Requests and Responses:
 
-1)Registration -> ```http://127.0.0.1:8000/register/```:
+- Registration -> ```http://127.0.0.1:8000/register/```:
 
 ```commandline
 Request:
@@ -38,7 +38,7 @@ Response:
 }
 ```
 
-2)After registration, an OTP code will be sent to your email for confirmation.
+- After registration, an OTP code will be sent to your email for confirmation.
 This is implemented using Celery.
 ```commandline
 Ваш код подтвержения регистрации.
@@ -50,7 +50,7 @@ This is implemented using Celery.
 Ваш код OTP: 721457
 ```
 
-3)Receiving a token -> ```http://127.0.0.1:8000/auth/token/login/```:
+- Receiving a token -> ```http://127.0.0.1:8000/auth/token/login/```:
 ```commandline
 Request:
 {
@@ -64,7 +64,7 @@ Response:
     "auth_token": "2da97e83e7d9c664e7f9b0d645f752b0d3c1ff3e"
 }
 ```
-4)Delete your account sent delete request to -> ```http://127.0.0.1:8000/auth/users/me/```:
+- Delete your account sent delete request to -> ```http://127.0.0.1:8000/auth/users/me/```:
 ```commandline
 Request:
 {
@@ -74,43 +74,43 @@ Request:
 }
 ```
 
-5)Link to swagger documentation -> ```http://127.0.0.1:8000/swagger/```
+- Link to swagger documentation -> ```http://127.0.0.1:8000/swagger/```
 
 [More endpoints and requests in documentation](https://djoser.readthedocs.io/en/latest/base_endpoints.html)
 
 ### Project installation:
 
-1)Cloning the repository:
+- Cloning the repository:
 
 ```git clone git@github.com:Chinpakamon/Disease_Tracker_test.git```
 
-2)Installing a virtual environment:
+- Installing a virtual environment:
 
 ```python3 -m venv venv```
 
-3) Activate a virtual environment:
+- Activate a virtual environment:
 
 ```siurce venv/bin/activate```
 
-3)Install requirements.txt:
+- Install requirements.txt:
 
 ```pip install -r requirements.txt```
 
-4)Create a .env file and format it as .env.example.
+- Create a .env file and format it as .env.example.
 
-5)Make migrations:
+
+- Make migrations:
 
 ```python3 manage.py makemigrations && python3 manage.pt migrate```
 
-6)Run Redis in docker ([documentation](https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html#redis)):
+- Run Redis in docker ([documentation](https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html#redis)):
 
 ```docker run -d -p 6379:6379 redis```
 
-7)Run logs for Celery tasks:
+- Run logs for Celery tasks:
 
 ```celery -A backand worker -l info```
 
-
-8)Start the server:
+- Start the server:
 
 ```python3 manage.py runserver```
