@@ -6,6 +6,10 @@ This is a project that involves creating a RESTful API with Django, integrating
 authentication and authorization, setting up Celery for message queues, and
 building a management panel with CRUD operations.
 
+
+### Technologies:
+Python, Django, DRF, Celery, Redis, PostgreSQL and etc.
+
 ### Test Tasks:
 
 Backend:
