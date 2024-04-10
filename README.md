@@ -1,12 +1,12 @@
 ## Longevity InTime Test Tasks
 
-#### About project:
+### About project:
 
 This is a project that involves creating a RESTful API with Django, integrating
 authentication and authorization, setting up Celery for message queues, and
 building a management panel with CRUD operations.
 
-#### Test Tasks:
+### Test Tasks:
 
 Backend:
 
@@ -18,7 +18,7 @@ Backend:
 6. Message Queue with Celery.
 7. Database and Deployment.
 
-#### Project Requests and Responses:
+### Project Requests and Responses:
 
 1)Registration -> ```http://127.0.0.1:8000/register/```:
 
@@ -74,8 +74,11 @@ Request:
 }
 ```
 
+5)Link to swagger documentation -> ```http://127.0.0.1:8000/swagger/```
+
 [More endpoints and requests in documentation](https://djoser.readthedocs.io/en/latest/base_endpoints.html)
-#### Project installation:
+
+### Project installation:
 
 1)Cloning the repository:
 
