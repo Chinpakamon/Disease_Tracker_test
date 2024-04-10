@@ -74,6 +74,7 @@ Request:
 }
 ```
 
+[More endpoints and requests in documentation](https://djoser.readthedocs.io/en/latest/base_endpoints.html)
 #### Project installation:
 
 1)Cloning the repository:
